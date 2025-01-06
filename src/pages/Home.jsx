@@ -1,52 +1,22 @@
-import React, { Suspense, useEffect, useRef, useState } from "react";
+import { Canvas } from "@react-three/fiber";
+import { Suspense, useEffect, useRef, useState } from "react";
+
 import sakura from "../assets/sakura.mp3";
-import { Canvas } from '@react-three/fiber';
-import Loader from '../components/Loader'; // Mantendo o Loader original
-import LoaderGif from '../components/LoaderGif'; // Importe o novo LoaderGif
-import Island from '../models/AppIsland';
-import Sky from '../models/Sky';
-import Mew from '../models/Mew';
-import Plane from '../models/Plane';
-import HomeInfo from '../components/HomeInfo';
+import { HomeInfo, Loader } from "../components";
 import { soundoff, soundon } from "../assets/icons";
+import { Bird } from "../models/Bird";
+import { Island } from "../models/Island";
+import { Plane } from "../models/Plane";
+import { Sky } from "../models/Sky";
 
 const Home = () => {
   const audioRef = useRef(new Audio(sakura));
-  const timeoutRef = useRef(null);
-  const [isTextVisible, setIsTextVisible] = useState(true);
-  const [currentStage, setCurrentStage] = useState(1);
-  const [isRotating, setIsRotating] = useState(false);
-  const [isPlayingMusic, setIsPlayingMusic] = useState(false);
-  const [isLoading, setIsLoading] = useState(true); // Novo estado para carregar o GIF
-
   audioRef.current.volume = 0.4;
   audioRef.current.loop = true;
 
-  useEffect(() => {
-    const handleKeyDown = (event) => {
-      if (event.key === "ArrowRight" || event.key === "ArrowLeft") {
-        setIsTextVisible(false);
-        clearTimeout(timeoutRef.current);
-      }
-    };
-
-    const handleKeyUp = (event) => {
-      if (event.key === "ArrowRight" || event.key === "ArrowLeft") {
-        timeoutRef.current = setTimeout(() => {
-          setIsTextVisible(true);
-        }, 2000);
-      }
-    };
-
-    window.addEventListener("keydown", handleKeyDown);
-    window.addEventListener("keyup", handleKeyUp);
-
-    return () => {
-      window.removeEventListener("keydown", handleKeyDown);
-      window.removeEventListener("keyup", handleKeyUp);
-      clearTimeout(timeoutRef.current);
-    };
-  }, []);
+  const [currentStage, setCurrentStage] = useState(1);
+  const [isRotating, setIsRotating] = useState(false);
+  const [isPlayingMusic, setIsPlayingMusic] = useState(false);
 
   useEffect(() => {
     if (isPlayingMusic) {
@@ -58,22 +28,16 @@ const Home = () => {
     };
   }, [isPlayingMusic]);
 
-  useEffect(() => {
-    // Simule um carregamento, por exemplo, aguarde 3 segundos antes de remover o GIF de carregamento
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 3000);
-  }, []);
-
   const adjustBiplaneForScreenSize = () => {
     let screenScale, screenPosition;
 
+    // If screen width is less than 768px, adjust the scale and position
     if (window.innerWidth < 768) {
-      screenScale = [0.8, 0.8, 0.8];
+      screenScale = [1.5, 1.5, 1.5];
       screenPosition = [0, -1.5, 0];
     } else {
-      screenScale = [1.5, 1.5, 1.5];
-      screenPosition = [0, -3.2, -4];
+      screenScale = [3, 3, 3];
+      screenPosition = [0, -4, -4];
     }
 
     return [screenScale, screenPosition];
@@ -83,11 +47,11 @@ const Home = () => {
     let screenScale, screenPosition;
 
     if (window.innerWidth < 768) {
-      screenScale = [1.7, 1.7, 1.7];
-      screenPosition = [0.5, -1.5, -18.4];
+      screenScale = [0.9, 0.9, 0.9];
+      screenPosition = [0, -6.5, -43.4];
     } else {
-      screenScale = [5, 5, 5];
-      screenPosition = [1, -3.5, -38.4];
+      screenScale = [1, 1, 1];
+      screenPosition = [0, -6.5, -43.4];
     }
 
     return [screenScale, screenPosition];
@@ -98,27 +62,48 @@ const Home = () => {
 
   return (
     <section className='w-full h-screen relative'>
-      {isLoading && <LoaderGif />} {/* Mostra o GIF de carregamento */}
-      
       <div className='absolute top-28 left-0 right-0 z-10 flex items-center justify-center'>
-        {isTextVisible && <HomeInfo />}
+        {currentStage && <HomeInfo currentStage={currentStage} />}
       </div>
 
       <Canvas
-        className={`w-full h-screen bg-transparent ${isRotating ? "cursor-grabbing" : "cursor-grab"}`}
+        className={`w-full h-screen bg-transparent ${
+          isRotating ? "cursor-grabbing" : "cursor-grab"
+        }`}
         camera={{ near: 0.1, far: 1000 }}
       >
         <Suspense fallback={<Loader />}>
-          <directionalLight position={[3.5, 3, 0.5]} intensity={4} />
-          <ambientLight intensity={2} />
+          <directionalLight position={[1, 1, 1]} intensity={2} />
+          <ambientLight intensity={0.5} />
           <pointLight position={[10, 5, 10]} intensity={2} />
-          <spotLight position={[0, 50, 10]} angle={0.15} penumbra={1} intensity={2} />
-          <hemisphereLight skyColor='#b1e1ff' groundColor='#000000' intensity={5} />
+          <spotLight
+            position={[0, 50, 10]}
+            angle={0.15}
+            penumbra={1}
+            intensity={2}
+          />
+          <hemisphereLight
+            skyColor='#b1e1ff'
+            groundColor='#000000'
+            intensity={1}
+          />
 
-          <Mew />
+          <Bird />
           <Sky isRotating={isRotating} />
-          <Island isRotating={isRotating} setIsRotating={setIsRotating} setCurrentStage={setCurrentStage} position={islandPosition} rotation={[0.4, 4.7077, 0]} scale={islandScale} />
-          <Plane isRotating={isRotating} position={biplanePosition} rotation={[0, -20.2, 0]} scale={biplaneScale} />
+          <Island
+            isRotating={isRotating}
+            setIsRotating={setIsRotating}
+            setCurrentStage={setCurrentStage}
+            position={islandPosition}
+            rotation={[0.1, 4.7077, 0]}
+            scale={islandScale}
+          />
+          <Plane
+            isRotating={isRotating}
+            position={biplanePosition}
+            rotation={[0, 20.1, 0]}
+            scale={biplaneScale}
+          />
         </Suspense>
       </Canvas>
 
@@ -127,14 +112,8 @@ const Home = () => {
           src={!isPlayingMusic ? soundoff : soundon}
           alt='jukebox'
           onClick={() => setIsPlayingMusic(!isPlayingMusic)}
-          className='w-9 h-9 cursor-pointer object-contain'
+          className='w-10 h-10 cursor-pointer object-contain'
         />
-      </div>
-
-      <div>
-        {isTextVisible && <div className="text-custom absolute bottom-2 right-2 bg-black text-white py-2 px-3 text-xs sm:text-sm md:text-base rounded">
-          Press your<kbd>&#10145;</kbd>key 😃
-        </div>}
       </div>
     </section>
   );

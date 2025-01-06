@@ -5,7 +5,7 @@ import { useAnimations, useGLTF } from "@react-three/drei";
 import birdScene from "../assets/3d/bird.glb";
 
 // 3D Model from: https://sketchfab.com/3d-models/phoenix-bird-844ba0cf144a413ea92c779f18912042
-const Bird = () => {
+export function Bird() {
   const birdRef = useRef();
 
   // Load the 3D model and animations from the provided GLTF file
@@ -54,4 +54,3 @@ const Bird = () => {
     </mesh>
   );
 }
-export default Bird
