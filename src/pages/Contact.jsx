@@ -41,9 +41,9 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: "Laura",
+          to_name: "Gabriel",
           from_email: form.email,
-          to_email: "lauraffrancine19@gmail.com",
+          to_email: "biellalex86@gmail.com",
           message: form.message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
@@ -99,7 +99,7 @@ const Contact = () => {
               type='text'
               name='name'
               className='input'
-              placeholder='Laura'
+              placeholder='Gabriel'
               required
               value={form.name}
               onChange={handleChange}
@@ -113,7 +113,7 @@ const Contact = () => {
               type='email'
               name='email'
               className='input'
-              placeholder='Laura@gmail.com'
+              placeholder='Gabriel@gmail.com'
               required
               value={form.email}
               onChange={handleChange}

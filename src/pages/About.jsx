@@ -31,9 +31,9 @@ const About = () => {
         Hello World, I'm{" "}
         <span className='blue-gradient_text font-semibold drop-shadow'>
           {" "}
-          Laura
+          Gabriel
         </span>{" "}
-        😊
+        👨‍💻
       </h1>
 
       <div className='mt-5 flex flex-col gap-3 text-slate-700 ' style={{ textAlign: 'justify' }}>

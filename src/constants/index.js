@@ -256,12 +256,12 @@ export const socialLinks = [
     {
         name: 'GitHub',
         iconUrl: github,
-        link: 'https://github.com/quelqu-un',
+        link: 'https://github.com/Gabriel-Alexandre',
     },
     {
         name: 'LinkedIn',
         iconUrl: linkedin,
-        link: 'https://www.linkedin.com/in/laura-adler-silva/',
+        link: 'https://www.linkedin.com/in/gabriel-alexandre-279816201/',
     }
 ];
 
