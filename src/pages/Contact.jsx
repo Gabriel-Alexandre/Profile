@@ -1,12 +1,10 @@
 import emailjs from "@emailjs/browser";
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useRef, useState } from "react";
-//import  Fox from "../models/Fox";
-//import  Rasengan  from "../models/Rasengan";
-import Robot from "../models/Robot"
+
+import { Fox } from "../models/Fox";
 import useAlert from "../hooks/useAlert";
-import Loader  from "../components/Loader";
-import Alert from "../components/Alert";
+import { Alert, Loader } from "../components";
 
 const Contact = () => {
   const formRef = useRef();
@@ -15,20 +13,12 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
   const [currentAnimation, setCurrentAnimation] = useState("idle");
 
-
-  const rasenganRef = useRef();
-
-  
-
   const handleChange = ({ target: { name, value } }) => {
     setForm({ ...form, [name]: value });
   };
-//rig|rigAction.001
 
-//AnimationAction
-  const handleFocus = () => setCurrentAnimation("rig|rigAction.001");
+  const handleFocus = () => setCurrentAnimation("walk");
   const handleBlur = () => setCurrentAnimation("idle");
- 
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -41,9 +31,9 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: "Gabriel",
+          to_name: "JavaScript Mastery",
           from_email: form.email,
-          to_email: "biellalex86@gmail.com",
+          to_email: "sujata@jsmastery.pro",
           message: form.message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
@@ -82,7 +72,7 @@ const Contact = () => {
   };
 
   return (
-    <section className='relative lg:-mt-7 flex lg:flex-row flex-col max-container 'style={{ marginBottom: 2, paddingBottom: 2 }}>
+    <section className='relative flex lg:flex-row flex-col max-container'>
       {alert.show && <Alert {...alert} />}
 
       <div className='flex-1 min-w-[50%] flex flex-col'>
@@ -91,7 +81,7 @@ const Contact = () => {
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className='w-full flex flex-col gap-7 mt-5'
+          className='w-full flex flex-col gap-7 mt-14'
         >
           <label className='text-black-500 font-semibold'>
             Name
@@ -99,7 +89,7 @@ const Contact = () => {
               type='text'
               name='name'
               className='input'
-              placeholder='Gabriel'
+              placeholder='John'
               required
               value={form.name}
               onChange={handleChange}
@@ -113,7 +103,7 @@ const Contact = () => {
               type='email'
               name='email'
               className='input'
-              placeholder='Gabriel@gmail.com'
+              placeholder='John@gmail.com'
               required
               value={form.email}
               onChange={handleChange}
@@ -147,7 +137,7 @@ const Contact = () => {
         </form>
       </div>
 
-      <div className='lg:w-1/2 w-full  lg:h-auto  md:h-[550px] h-[350px]'>
+      <div className='lg:w-1/2 w-full lg:h-auto md:h-[550px] h-[350px]'>
         <Canvas
           camera={{
             position: [0, 0, 5],
@@ -156,24 +146,22 @@ const Contact = () => {
             far: 1000,
           }}
         >
-           <directionalLight position={[1.4, 1.5, 2.2]} intensity={2.5} /> 
+          <directionalLight position={[0, 0, 1]} intensity={2.5} />
           <ambientLight intensity={1} />
-          {/* <pointLight position={[50, 20, 10]} intensity={10} /> */}
+          <pointLight position={[5, 10, 0]} intensity={2} />
           <spotLight
-            position={[3, 2, 10]}
+            position={[10, 10, 10]}
             angle={0.15}
-            penumbra={0.5}
+            penumbra={1}
             intensity={2}
           />
 
           <Suspense fallback={<Loader />}>
-            <Robot
-              //intervalId = {intervalId}
-              
+            <Fox
               currentAnimation={currentAnimation}
-              position={[0.8, 0.09, 0.01]}
-              rotation={[-3, 3.1, 3.2]}
-              scale={[3.5,3.5,3.5]}
+              position={[0.5, 0.35, 0]}
+              rotation={[12.629, -0.6, 0]}
+              scale={[0.5, 0.5, 0.5]}
             />
           </Suspense>
         </Canvas>
