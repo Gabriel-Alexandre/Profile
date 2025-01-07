@@ -3,6 +3,7 @@ import { meta,
     starbucks, 
     sisenex, 
     kaseya,
+    dhauz_logo,
     tesla, 
     image, 
     logo,
@@ -216,34 +217,34 @@ export const skills = [
 
 export const experiences = [
    
-        {
-            title: "Frontend Engineer - DAP",
-            company_name: "Kaseya",
-            icon: kaseya,
-            iconBg: "#FFF",
-            date: "August 2024 - Present",
-            points: [
-              "Spearheaded the creation and optimization of WalkMe tutorials and guides for 40+ Kaseya applications, ensuring seamless user adoption and driving a 30% increase in customer engagement.",
-              "Collaborated with stakeholders, product teams, QA engineers, and technical writers to align on product goals, delivering high-quality solutions within agile sprint cycles.",
-              "Actively participated in daily stand-up meetings and sprint planning, contributing to team efficiency and ensuring alignment with project timelines.",
-              "Managed tasks and tracked progress using JIRA, maintaining clear documentation and consistently meeting sprint deadlines.",
-              "Refined user flows and addressed usability challenges, achieving a 25% improvement in user satisfaction based on feedback and metrics.",
-              "Ensured quality and consistency by testing and iterating on solutions, reducing reported onboarding issues by 20%."
-            ]
-          },  
-      {
-        title: "React.js Developer",
+    {
+        title: "Full Stack Developer",
+        company_name: "Dhauz",
+        icon: dhauz_logo,
+        iconBg: "#FFF",
+        date: "Mar 2022 - Present",
+        points: [
+            "Developed full-stack applications using C#, Angular, Entity Framework, and Next.js, implementing CRUD operations, socket communication, and middleware functionality.",
+            "Built and maintained robust backend services with MySQL, PostgreSQL, and Supabase, ensuring efficient data management and API integrations.",
+            "Leveraged AWS and Azure cloud services for scalable infrastructure management, including file storage, database hosting, and application deployment.",
+            "Created dynamic data visualizations and charts to effectively display complex information and metrics to stakeholders.",
+            "Implemented containerized development environments using Docker, streamlining deployment processes and ensuring consistency across environments.",
+            "Collaborated in agile teams using version control (Git) and project management tools while maintaining high code quality standards."
+        ]
+    },  
+    {
+        title: "Mobile Developer",
         company_name: "LUMO",
         icon: sisenex,
         iconBg: "#accbe1",
-        date: "August 2023 - Present",
+        date: "Jun 2021 - Jun 2022",
         points: [
             "Interface Design: Implementing user-friendly interfaces for evaluators and room monitors, significantly enhancing user interaction and operational efficiency.",
             "Feature Implementation: Developing new screens and functionalities to support dynamic interactions during the event's oral presentation sessions..",
             "API Integration: Integrating both GraphQL and RESTful APIs to ensure seamless data synchronization across backend services." ,     
             "Debugging and Optimization: Identifying and resolving critical bugs, improving application stability and performance.  ", 
             ],
-        },   
+    },   
      
 ];
 

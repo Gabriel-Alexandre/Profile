@@ -30,6 +30,7 @@ import panda2 from './panda2.jpeg'
 import amazon from './amazon.png'
 import amazon2 from './amazon2.png'
 import amazon3 from './amazon3.png'
+import dhauz_logo from './dhauz_logo.jpg'
 export {
     hero,
     meta,
@@ -63,4 +64,5 @@ export {
     amazon,
     amazon2,
     amazon3,
+    dhauz_logo,
 }
