@@ -38,12 +38,12 @@ const About = () => {
 
       <div className='mt-5 flex flex-col gap-3 text-slate-700 ' style={{ textAlign: 'justify' }}>
       <p>
-          Software developer specializing in web and app development, graduating this year with a degree in Computer Engineering. 
-          Skilled in JavaScript, Next, and React, I develop responsive solutions that enhance user experiences and meet business needs.
-          Throughout my academic career, I have engaged in several hands-on projects and internships that have prepared me for real-world challenges,
-          providing me with a robust foundation in Full-Stacks technologies.
-          If you’re looking for a passionate programmer who can contribute immediately, feel free to <Link to="/contact" className="text-blue-500 hover:underline">reach out</Link>.
-          Thank you for your time and consideration. I look forward to the opportunity to discuss how I can contribute to your team.
+          Full Stack developer with expertise in web and mobile development, holding a degree in Computer Engineering.
+          Skilled in Next.js, Angular, C#, and various cloud technologies, I develop scalable solutions that enhance user experiences and drive business value.
+          With over 4 years of professional experience at Dhauz and LUMO, I've worked on complex projects involving CRUD operations, API integrations, and cloud infrastructure.
+          My background includes working with technologies like Docker, AWS, Azure and various databases, allowing me to deliver robust full-stack applications.
+          As a passionate problem solver, I thrive on tackling complex challenges and finding innovative solutions. If you're looking for a developer who not only codes but also brings a problem-solving mindset to every project, feel free to <Link to="/contact" className="text-blue-500 hover:underline">reach out</Link>.
+          Thank you for your time and consideration. I look forward to discussing how I can contribute to your team's success.
         </p>
       </div>
 
@@ -95,10 +95,7 @@ const About = () => {
         <h3 className='subhead-text'>Work Experience.</h3>
         <div className='mt-5 flex flex-col gap-3 text-slate-500'>
           <p style={{ textAlign: 'justify' }}>
-          As a Software Development Intern at LUMO, I am actively engaged in the development of SisEnex, 
-          a dual-platform (web and app) application designed to streamline the evaluation process at the 
-           ENEX university event. My key responsibilities include:
-
+          Throughout my career, I've had the opportunity to work on diverse and challenging projects. Currently, as a Full Stack Developer at Dhauz, I develop robust applications using modern technologies like C#, Angular, and Next.js, while also managing cloud infrastructure with AWS and Azure. Previously, as a Mobile Developer at LUMO, I focused on creating intuitive user interfaces and implementing key functionalities for the SisEnex platform, which enhanced the evaluation process for university events.
           </p>
         </div>
 
