@@ -268,7 +268,7 @@ export const projects = [
         theme: 'btn-back-red',
         name: 'Digital Panda',
         description: 'Developed a fullstack e-commerce marketplace using Next.js 14, specializing in digital products. Key features included user authentication, admin dashboard, product verification, and secure payment processing with Stripe. Enhanced user experience with attractive landing and product pages using Tailwind CSS and custom artwork. Integrated MongoDB, tRPC, and Payload CMS, implemented email communications, and built a locally persisted shopping cart system. ',
-        link: 'https://digitalpanda-production.up.railway.app/',
+        link: 'https://digital-panda-dtr6.onrender.com',
     },
     {
         iconUrl: threads,
