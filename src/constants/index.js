@@ -50,7 +50,15 @@ import { meta,
     lifemap2,
     lifemap3,
     lifemap4,
-    
+    rag1,
+    rag2,
+    rag3,
+    rag4,
+    rag5,
+    rag6,
+    rag7,
+    rag8,
+    rag9,
 } from "../assets/images";
 
 import {
@@ -283,6 +291,15 @@ export const socialLinks = [
 ];
 
 export const projects = [
+    {
+        iconUrl: pricewise,
+        img: [rag1,rag2,rag3,rag4,rag5,rag6,rag8,rag9],
+        theme: 'btn-back-orange',
+        name: 'RAG Contratos MEI',
+        description: 'Developed an intelligent contract analysis platform for Individual Microentrepreneurs (MEI) using advanced AI and RAG (Retrieval-Augmented Generation) technology. Built a comprehensive system that processes legal documents, provides semantic search capabilities, and offers specialized contract analysis including obligations, risks, deadlines, and payments. Implemented chat functionality with contextual conversations, document chunking for large files, and automated analysis workflows. Features include multi-format document support (PDF, DOCX, TXT), OpenAI integration for embeddings and text generation, Supabase database with vector search, and Docker deployment. The platform democratizes legal document analysis for Brazilian small business owners through natural language interactions and actionable insights.',
+        link: 'https://ragmei.gaxpreview.site/',
+    },
+// End of Selection
     {
         iconUrl: pricewise,
         img: [cognisense1,cognisense2,cognisense3,cognisense4],

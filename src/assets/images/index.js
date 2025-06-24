@@ -50,6 +50,16 @@ import lifemap1 from './lifemap1.png'
 import lifemap2 from './lifemap2.png'
 import lifemap3 from './lifemap3.png'
 import lifemap4 from './lifemap4.png'
+import rag1 from './rag1.png'
+import rag2 from './rag2.png'
+import rag3 from './rag3.png'
+import rag4 from './rag4.png'
+import rag5 from './rag5.png'
+import rag6 from './rag6.png'
+import rag7 from './rag7.png'
+import rag8 from './rag8.png'
+import rag9 from './rag9.png'
+
 
 
 
@@ -108,4 +118,13 @@ export {
     lifemap2,
     lifemap3,
     lifemap4,
+    rag1,
+    rag2,
+    rag3,
+    rag4,
+    rag5,
+    rag6,
+    rag7,
+    rag8,
+    rag9,
 }
