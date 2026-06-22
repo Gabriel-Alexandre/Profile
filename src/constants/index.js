@@ -349,7 +349,7 @@ export const projects = [
         theme: 'btn-back-red',
         name: 'CogniSense',
         description: 'Developed a comprehensive AI insights platform using Next.js, React, and Tailwind CSS for modern web development. The platform offers valuable content about AI advancements with a no-nonsense approach. Features include technical accuracy verification, forward-thinking perspectives, and reader-first content design. The platform helps users navigate the complex AI landscape with confidence, bridging the gap between advanced AI technologies and practical understanding.',
-        link: 'https://www.gax.services/',
+        link: 'https://cognisense.gaxtech.org/',
     },
     {
         iconUrl: pricewise,
@@ -357,7 +357,7 @@ export const projects = [
         theme: 'btn-back-red',
         name: 'Hangmans Tale',
         description: 'Developed a visually stunning hangman game with React and Tailwind CSS, creating an intuitive gaming experience. Players can test their vocabulary and quick thinking with an extensive word collection. Features include custom word sets that allow users to challenge friends and share gameplay sessions. The beautiful design using Next.js enhances user engagement while providing a classic word-guessing adventure in a modern, interactive format.',
-        link: 'https://hangmanstale.gax.services/',
+        link: 'https://hangmanstale.gaxtech.org/',
     },
     {
         iconUrl: pricewise,
@@ -365,7 +365,7 @@ export const projects = [
         theme: 'btn-back-red',
         name: 'JobConnect',
         description: 'Developed a comprehensive job search platform connecting job seekers with employers using Next.js, React, and Tailwind CSS. Features include user authentication, job posting and application system, candidate filtering, and profile management. Enhanced user experience with an intuitive interface leveraging Tailwind CSS components. The platform offers thousands of job listings, streamlined application process for job seekers, and advanced candidate filtering tools for employers, while also supporting remote work opportunities.',
-        link: 'https://jobcandidates.gax.services/marketing',
+        link: 'https://jobcandidates.gaxtech.org/marketing',
     },
     {
         iconUrl: estate,
