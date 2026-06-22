@@ -256,7 +256,7 @@ export const experiences = [
             "Led the technical direction of the platform's core domains: scheduled tasks, skills system, and context management.",
             "Coordinated a team of 2 engineers, owning product decisions, feature prioritization, and architecture definition across those areas.",
             "Resolved critical infrastructure challenges including timeout handling and server-to-server authentication on the scheduled tasks domain.",
-            "Led a major refactor of the application's core logic to operate asynchronously via scheduled tasks, impacting the platform's most critical LLM-based workflows.",
+            "Led a major refactor of the application's core logic to operate asynchronously via scheduled tasks, enabling reliable async processing of the platform's most critical LLM-based workflows.",
             "Served as the primary technical reference and PR reviewer for all work within these domains.",
         ],
     },
@@ -267,10 +267,10 @@ export const experiences = [
         iconBg: "#0f0f0f",
         date: "Sep 2025 - Mar 2026",
         points: [
-            "Responsible for the full development lifecycle at one of Latin America's largest AI companies.",
+            "Owned the full development lifecycle at one of Latin America's largest AI companies.",
             "Built user interfaces with React and Next.js, developed APIs with Node.js, and managed CI/CD pipelines, automated testing, and data security.",
             "Developed user feedback services from scratch and implemented the payment gateway responsible for the platform's subscription renewals.",
-            "Worked on LLM performance optimization and cost reduction in production environments.",
+            "Drove LLM performance optimization and cost reduction in production, improving inference reliability and reducing operational costs.",
         ],
     },
     {
@@ -281,7 +281,7 @@ export const experiences = [
         date: "Apr 2025 - Sep 2025",
         points: [
             "Served as tech lead, responsible for defining solution architectures and managing multiple projects across clients.",
-            "Worked with Next.js, React, Supabase, Docker, C#, and Angular depending on project needs.",
+            "Worked across Next.js, React, Supabase, Docker, C#, and Angular based on project requirements.",
             "Led integration and ingestion of large volumes of data from Databricks, designing data modeling and consumption strategies.",
             "Implemented CI/CD pipelines using GitHub Workflows to enhance automation and reliability.",
         ],
@@ -296,7 +296,7 @@ export const experiences = [
             "Grew from intern to mid-level developer building full-stack web applications across multiple client projects.",
             "Built user interfaces and backend services using C#, Angular, Next.js, React, MySQL, Docker, and AWS.",
             "Implemented CRUD operations, API integrations, socket communication, middleware, file handling, and data visualizations.",
-            "Managed cloud infrastructure on AWS and contributed to scalable, performance-oriented solutions.",
+            "Managed cloud infrastructure on AWS and delivered scalable, performance-oriented solutions across multiple client projects.",
         ],
     },
     {

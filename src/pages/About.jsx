@@ -37,18 +37,17 @@ const About = () => {
           solving the problems that show up when LLMs need to work inside real systems, not demos.
         </p>
         <p>
-          I have 5+ years of experience building scalable systems. Over the past year I worked at
+          I have 5+ years of experience building scalable systems. Over the past year, I worked at
           Adapta, one of Latin America's largest AI companies, where I grew from Senior Software
-          Engineer to Domain Lead. I led critical platform domains including scheduled tasks, skills
-          system, and context management, owning product decisions, architecture, and feature
-          prioritization.
+          Engineer to Domain Lead — leading critical platform domains including scheduled tasks,
+          skills system, and context management, and owning product decisions, architecture, and
+          feature prioritization.
         </p>
         <p>
-          Some of the challenges I solved in production: refactored core application logic to
-          operate asynchronously via scheduled tasks, solving critical timeout and server-to-server
-          authentication issues; implemented the payment gateway responsible for the platform's
-          subscription renewals; and worked continuously on LLM performance optimization and cost
-          reduction in live environments.
+          In production, I refactored the core application logic to operate asynchronously via
+          scheduled tasks, resolving critical timeout and server-to-server authentication failures;
+          implemented the payment gateway responsible for the platform's subscription renewals; and
+          drove ongoing LLM performance optimization and cost reduction in live environments.
         </p>
         <p>
           My main stack is Node.js, React, Next.js, and TypeScript, with experience in C#, Angular,
@@ -110,11 +109,11 @@ const About = () => {
         <h3 className='subhead-text'>Work Experience.</h3>
         <div className='mt-5 flex flex-col gap-3 text-slate-500'>
           <p style={{ textAlign: 'justify' }}>
-            Throughout my career I've worked on production systems across AI platforms, enterprise
+            Throughout my career, I've worked on production systems across AI platforms, enterprise
             web applications, and mobile products. Most recently at Adapta, I led core platform
-            domains and shipped infrastructure that keeps LLM workloads reliable at scale. Before
-            that, I spent over three years at Dhauz growing from intern to tech lead, and started
-            my journey at LUMO building mobile interfaces for university event platforms.
+            domains and shipped infrastructure that kept LLM workloads reliable at scale. Before
+            that, I spent over three years at Dhauz growing from intern to tech lead, and began my
+            professional journey at LUMO building mobile interfaces for university event platforms.
           </p>
         </div>
 
