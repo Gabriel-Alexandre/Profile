@@ -72,6 +72,13 @@ import presentedigital4 from './presentedigital4.png'
 import presentedigital5 from './presentedigital5.png'
 import presentedigital6 from './presentedigital6.png'
 import presentedigital7 from './presentedigital7.png'
+import zapstter1 from './zapstter1.png'
+import zapstter2 from './zapstter2.png'
+import zapstter3 from './zapstter3.png'
+import zapstter4 from './zapstter4.png'
+import zapstter5 from './zapstter5.png'
+import zapstter6 from './zapstter6.png'
+import zapstter7 from './zapstter7.png'
 export {
     hero,
     meta,
@@ -114,6 +121,13 @@ export {
     presentedigital5,
     presentedigital6,
     presentedigital7,
+    zapstter1,
+    zapstter2,
+    zapstter3,
+    zapstter4,
+    zapstter5,
+    zapstter6,
+    zapstter7,
     cognisense1,
     cognisense2,
     cognisense3,
