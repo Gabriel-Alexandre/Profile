@@ -330,15 +330,6 @@ export const socialLinks = [
 export const projects = [
     {
         iconUrl: pricewise,
-        img: [rag1,rag2,rag3,rag4,rag5,rag6,rag8,rag9],
-        theme: 'btn-back-orange',
-        name: 'RAG Contratos MEI',
-        description: 'Developed an intelligent contract analysis platform for Individual Microentrepreneurs (MEI) using advanced AI and RAG (Retrieval-Augmented Generation) technology. Built a comprehensive system that processes legal documents, provides semantic search capabilities, and offers specialized contract analysis including obligations, risks, deadlines, and payments. Implemented chat functionality with contextual conversations, document chunking for large files, and automated analysis workflows. Features include multi-format document support (PDF, DOCX, TXT), OpenAI integration for embeddings and text generation, Supabase database with vector search, and Docker deployment. The platform democratizes legal document analysis for Brazilian small business owners through natural language interactions and actionable insights.',
-        link: 'https://ragmei.gaxpreview.site/',
-    },
-// End of Selection
-    {
-        iconUrl: pricewise,
         img: [cognisense1,cognisense2,cognisense3,cognisense4],
         theme: 'btn-back-red',
         name: 'CogniSense',
@@ -361,45 +352,13 @@ export const projects = [
         description: 'Developed a comprehensive job search platform connecting job seekers with employers using Next.js, React, and Tailwind CSS. Features include user authentication, job posting and application system, candidate filtering, and profile management. Enhanced user experience with an intuitive interface leveraging Tailwind CSS components. The platform offers thousands of job listings, streamlined application process for job seekers, and advanced candidate filtering tools for employers, while also supporting remote work opportunities.',
         link: 'https://jobcandidates.gax.services/marketing',
     },
-    // {
-    //     iconUrl: pricewise,
-    //     img: [panda1,panda2],
-    //     theme: 'btn-back-red',
-    //     name: 'Digital Panda',
-    //     description: 'Developed a fullstack e-commerce marketplace using Next.js 14, specializing in digital products. Key features included user authentication, admin dashboard, product verification, and secure payment processing with Stripe. Enhanced user experience with attractive landing and product pages using Tailwind CSS and custom artwork. Integrated MongoDB, tRPC, and Payload CMS, implemented email communications, and built a locally persisted shopping cart system. ',
-    //     link: 'https://digital-panda-dtr6.onrender.com',
-    // },
-    {
-        iconUrl: car,
-        img: [  face1,face2,face3, face4,face5,],
-        theme: 'btn-back-blue',
-        name: 'Face Recognition AI',
-        description: 'Developed an IoT-based face authentication system, engineered a full-stack administrative dashboard for managing face authentication in workplace entry systems. Implemented real-time updates and system log visualizations, enhancing management and user experience. Developed secure face registration and verification processes using faceapi.js an AI for accurate identification.',
-        link: 'https://face-auth-iot.vercel.app/',
-    },
-    {
-        iconUrl: threads,
-        img: [sleep1, sleep2, sleep3],
-        theme: 'btn-back-green',
-        name: 'Sleepy Deep',
-        description: 'Developed an IoT-based face authentication system, engineered a full-stack administrative dashboard for managing face authentication in workplace entry systems. Implemented real-time updates and system log visualizations, enhancing management and user experience. Developed secure face registration and verification processes using faceapi.js an AI for accurate identification  .',
-        link: 'https://bit.ly/sleepyDeepApp',
-    },
     {
         iconUrl: estate,
-        img: [ amazon,amazon2,amazon3],
+        img: [amazon,amazon2,amazon3],
         theme: 'btn-back-black',
         name: 'Amazon Clone',
         description: 'Developed a responsive e-commerce application inspired by Amazon using HTML, CSS, and JavaScript, featuring product listings, search functionality, and a user-friendly shopping cart experience.',
         link: 'https://javascript-amazon-project-phi.vercel.app/index.html',
-    },
-    {
-        iconUrl: snapgram,
-        img: [imagegit1,imagegit2],
-        theme: 'btn-back-pin',
-        name: 'GitHub User Searcher',
-        description: 'The GitHub User Searcher is a web application designed to allow users to search for GitHub profiles and view their repositories. The project leverages the power of React for building the user interface, TypeScript for type safety and better code maintainability, Tailwind CSS for styling, and the GitHub API for fetching user data..',
-        link: 'https://github-user-search-app-ruby.vercel.app/',
     },
     {
         iconUrl: summiz,
@@ -408,14 +367,6 @@ export const projects = [
         name: 'Snake Game',
         description: 'The Snake Game is a classic arcade game recreated using modern web technologies. This project showcases your ability to implement game logic and create an engaging user interface using HTML, CSS, and JavaScript.',
         link: 'https://snake-game-olive-five.vercel.app/',
-    },
-    {
-        iconUrl: pricewise,
-        img: [lifemap1,lifemap2,lifemap3,lifemap4],
-        theme: 'btn-back-red',
-        name: 'LifeMap Guide',
-        description: 'Developed a visually appealing landing page with Next.js, React, and Tailwind CSS for exceptional UI/UX design. The page features an intuitive navigation system, responsive layout, and engaging visual elements that effectively communicate the service offerings. Implemented modern design principles with attention to typography, color theory, and user flow to create a seamless browsing experience. The clean and professional aesthetic enhances brand credibility while providing visitors with clear pathways to explore content and take desired actions.',
-        link: 'https://lifemap.gax.services/',
     },
     {
         iconUrl: summiz,
