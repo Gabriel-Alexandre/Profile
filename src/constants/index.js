@@ -4,6 +4,7 @@ import { meta,
     sisenex, 
     kaseya,
     dhauz_logo,
+    adapta_logo,
     tesla, 
     image, 
     logo,
@@ -103,14 +104,49 @@ import {
 
 export const skills = [
     {
-        imageUrl: css,
-        name: "CSS",
+        imageUrl: typescript,
+        name: "TypeScript",
+        type: "Language",
+    },
+    {
+        imageUrl: nextjs,
+        name: "Next.js",
         type: "Frontend",
     },
     {
-        imageUrl: express,
-        name: "Express",
+        imageUrl: react,
+        name: "React",
+        type: "Frontend",
+    },
+    {
+        imageUrl: nodejs,
+        name: "Node.js",
         type: "Backend",
+    },
+    {
+        imageUrl: python,
+        name: "Python",
+        type: "Language",
+    },
+    {
+        imageUrl: postgresql,
+        name: "PostgreSQL",
+        type: "Database",
+    },
+    {
+        imageUrl: docker,
+        name: "Docker",
+        type: "DevOps",
+    },
+    {
+        imageUrl: aws,
+        name: "AWS",
+        type: "Cloud",
+    },
+    {
+        imageUrl: googlecloud,
+        name: "Google Cloud",
+        type: "Cloud",
     },
     {
         imageUrl: git,
@@ -123,14 +159,29 @@ export const skills = [
         type: "Version Control",
     },
     {
-        imageUrl: html,
-        name: "HTML",
+        imageUrl: restapi,
+        name: "REST API",
+        type: "Backend",
+    },
+    {
+        imageUrl: mysql,
+        name: "MySQL",
+        type: "Database",
+    },
+    {
+        imageUrl: tailwindcss,
+        name: "Tailwind CSS",
         type: "Frontend",
     },
     {
         imageUrl: javascript,
         name: "JavaScript",
-        type: "Frontend",
+        type: "Language",
+    },
+    {
+        imageUrl: express,
+        name: "Express",
+        type: "Backend",
     },
     {
         imageUrl: mongodb,
@@ -138,18 +189,43 @@ export const skills = [
         type: "Database",
     },
     {
-        imageUrl: nextjs,
-        name: "Next.js",
+        imageUrl: html,
+        name: "HTML",
         type: "Frontend",
     },
     {
-        imageUrl: nodejs,
-        name: "Node.js",
-        type: "Backend",
+        imageUrl: css,
+        name: "CSS",
+        type: "Frontend",
     },
     {
-        imageUrl: react,
-        name: "React",
+        imageUrl: postman,
+        name: "Postman",
+        type: "Tools",
+    },
+    {
+        imageUrl: linux,
+        name: "Linux",
+        type: "Tools",
+    },
+    {
+        imageUrl: jira,
+        name: "Jira",
+        type: "Tools",
+    },
+    {
+        imageUrl: figma,
+        name: "Figma",
+        type: "Design",
+    },
+    {
+        imageUrl: bootstrap,
+        name: "Bootstrap",
+        type: "Frontend",
+    },
+    {
+        imageUrl: sass,
+        name: "Sass",
         type: "Frontend",
     },
     {
@@ -158,109 +234,71 @@ export const skills = [
         type: "State Management",
     },
     {
-        imageUrl: sass,
-        name: "Sass",
-        type: "Frontend",
-    },
-    {
-        imageUrl: tailwindcss,
-        name: "Tailwind CSS",
-        type: "Frontend",
-    },
-    {
-        imageUrl: typescript,
-        name: "TypeScript",
-        type: "Frontend",
-    },
-    {
-        imageUrl: bootstrap,
-        name: "Bootstrap",
-        type: "Frontend",
-    },
-    {
         imageUrl: vuejs,
         name: "Vue.js",
         type: "Frontend",
     },
     {
-        imageUrl: aws,
-        name: "AWS",
-        type: "Frontend",
-    },
-    {
-        imageUrl: googlecloud,
-        name: "GoogleCloud",
-        type: "Frontend",
-    },
-    {
-        imageUrl: mysql,
-        name: "Mysql",
-        type: "Frontend",   
-    },
-    {
-        imageUrl: postgresql,
-        name: "Postgresql",
-        type: "Frontend",
-    },
-    {
-        imageUrl: restapi,
-        name: "RestfulAPI",
-        type: "Frontend",
-    },
-    {
-        imageUrl: figma,
-        name: "Figma",
-        type: "Frontend",
-    },
-    {
-        imageUrl: jira,
-        name: "Jira",
-        type: "Frontend",
-    },
-    {
-        imageUrl: python,
-        name: "Python",
-        type: "Frontend",
-    },
-    {
-        imageUrl: docker,
-        name: "Docker",
-        type: "Frontend",
-    },
-    {
-        imageUrl: postman,
-        name: "Postman",
-        type: "Frontend",
-    },
-    {
         imageUrl: jquery,
-        name: "Jquery",
-        type: "Frontend",
-    },
-    {
-        imageUrl: linux,
-        name: "Linux",
+        name: "jQuery",
         type: "Frontend",
     },
 ];
 
 export const experiences = [
-   
     {
-        title: "Full Stack Developer",
+        title: "Domain Lead",
+        company_name: "Adapta",
+        icon: adapta_logo,
+        iconBg: "#0f0f0f",
+        date: "Mar 2026 - Jun 2026",
+        points: [
+            "Led the technical direction of the platform's core domains: scheduled tasks, skills system, and context management.",
+            "Coordinated a team of 2 engineers, owning product decisions, feature prioritization, and architecture definition across those areas.",
+            "Resolved critical infrastructure challenges including timeout handling and server-to-server authentication on the scheduled tasks domain.",
+            "Led a major refactor of the application's core logic to operate asynchronously via scheduled tasks, impacting the platform's most critical LLM-based workflows.",
+            "Served as the primary technical reference and PR reviewer for all work within these domains.",
+        ],
+    },
+    {
+        title: "Senior Software Engineer",
+        company_name: "Adapta",
+        icon: adapta_logo,
+        iconBg: "#0f0f0f",
+        date: "Sep 2025 - Mar 2026",
+        points: [
+            "Responsible for the full development lifecycle at one of Latin America's largest AI companies.",
+            "Built user interfaces with React and Next.js, developed APIs with Node.js, and managed CI/CD pipelines, automated testing, and data security.",
+            "Developed user feedback services from scratch and implemented the payment gateway responsible for the platform's subscription renewals.",
+            "Worked on LLM performance optimization and cost reduction in production environments.",
+        ],
+    },
+    {
+        title: "Senior Full-Stack Developer",
         company_name: "Dhauz",
         icon: dhauz_logo,
         iconBg: "#FFF",
-        date: "Mar 2022 - Present",
+        date: "Apr 2025 - Sep 2025",
         points: [
-            "Developed full-stack applications using C#, Angular, Entity Framework, and Next.js, implementing CRUD operations, socket communication, and middleware functionality.",
-            "Built and maintained robust backend services with MySQL, PostgreSQL, and Supabase, ensuring efficient data management and API integrations.",
-            "Leveraged AWS and Azure cloud services for scalable infrastructure management, including file storage, database hosting, and application deployment.",
-            "Created dynamic data visualizations and charts to effectively display complex information and metrics to stakeholders.",
-            "Implemented containerized development environments using Docker, streamlining deployment processes and ensuring consistency across environments.",
-            "Collaborated in agile teams using version control (Git) and project management tools while maintaining high code quality standards."
-        ]
-    },  
+            "Served as tech lead, responsible for defining solution architectures and managing multiple projects across clients.",
+            "Worked with Next.js, React, Supabase, Docker, C#, and Angular depending on project needs.",
+            "Led integration and ingestion of large volumes of data from Databricks, designing data modeling and consumption strategies.",
+            "Implemented CI/CD pipelines using GitHub Workflows to enhance automation and reliability.",
+        ],
+    },
+    {
+        title: "Full-Stack Developer",
+        company_name: "Dhauz",
+        icon: dhauz_logo,
+        iconBg: "#FFF",
+        date: "Mar 2022 - Apr 2025",
+        points: [
+            "Grew from intern to mid-level developer building full-stack web applications across multiple client projects.",
+            "Built user interfaces and backend services using C#, Angular, Next.js, React, MySQL, Docker, and AWS.",
+            "Implemented CRUD operations, API integrations, socket communication, middleware, file handling, and data visualizations.",
+            "Managed cloud infrastructure on AWS and contributed to scalable, performance-oriented solutions.",
+        ],
+    },
     {
         title: "Mobile Developer",
         company_name: "LUMO",
@@ -268,13 +306,12 @@ export const experiences = [
         iconBg: "#accbe1",
         date: "Jun 2021 - Jun 2022",
         points: [
-            "Interface Design: Implementing user-friendly interfaces for evaluators and room monitors, significantly enhancing user interaction and operational efficiency.",
-            "Feature Implementation: Developing new screens and functionalities to support dynamic interactions during the event's oral presentation sessions..",
-            "API Integration: Integrating both GraphQL and RESTful APIs to ensure seamless data synchronization across backend services." ,     
-            "Debugging and Optimization: Identifying and resolving critical bugs, improving application stability and performance.  ", 
-            ],
-    },   
-     
+            "Implemented user-friendly interfaces for evaluators and room monitors on the SisEnex platform.",
+            "Developed new screens and functionalities for dynamic interactions during university event presentations.",
+            "Integrated GraphQL and RESTful APIs to ensure seamless data synchronization across backend services.",
+            "Applied LGPD practices for data privacy compliance and improved application stability through debugging and optimization.",
+        ],
+    },
 ];
 
 export const socialLinks = [

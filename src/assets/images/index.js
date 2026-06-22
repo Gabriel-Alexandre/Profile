@@ -64,6 +64,7 @@ import rag9 from './rag9.png'
 
 
 import dhauz_logo from './dhauz_logo.jpg'
+import adapta_logo from './adapta-logo.png'
 export {
     hero,
     meta,
@@ -98,6 +99,7 @@ export {
     amazon2,
     amazon3,
     dhauz_logo,
+    adapta_logo,
     cognisense1,
     cognisense2,
     cognisense3,

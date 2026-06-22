@@ -5,16 +5,13 @@ import {
 
 import CTA from "../components/CTA";
 import { experiences, skills } from "../constants";
-import { Suspense, useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import "react-vertical-timeline-component/style.min.css";
 
 const About = () => {
-  console.log("Rendering About component");
-  // Initialize tooltip visibility state
   const [tooltipVisibility, setTooltipVisibility] = useState({});
 
-  // Event handlers to show and hide tooltips
   const showTooltip = (skillName) => {
     setTooltipVisibility({ ...tooltipVisibility, [skillName]: true });
   };
@@ -24,8 +21,6 @@ const About = () => {
   };
 
   return (
-
-
     <section className='max-container'>
       <h1 className='head-text'>
         Hello World, I'm{" "}
@@ -37,13 +32,33 @@ const About = () => {
       </h1>
 
       <div className='mt-5 flex flex-col gap-3 text-slate-700 ' style={{ textAlign: 'justify' }}>
-      <p>
-          Full Stack developer with expertise in web and mobile development, holding a degree in Computer Engineering.
-          Skilled in Next.js, Angular, C#, and various cloud technologies, I develop scalable solutions that enhance user experiences and drive business value.
-          With over 4 years of professional experience at Dhauz and LUMO, I've worked on complex projects involving CRUD operations, API integrations, and cloud infrastructure.
-          My background includes working with technologies like Docker, AWS, Azure and various databases, allowing me to deliver robust full-stack applications.
-          As a passionate problem solver, I thrive on tackling complex challenges and finding innovative solutions. If you're looking for a developer who not only codes but also brings a problem-solving mindset to every project, feel free to <Link to="/contact" className="text-blue-500 hover:underline">reach out</Link>.
-          Thank you for your time and consideration. I look forward to discussing how I can contribute to your team's success.
+        <p>
+          I'm a senior software engineer focused on AI and automation. Most of my time goes into
+          solving the problems that show up when LLMs need to work inside real systems, not demos.
+        </p>
+        <p>
+          I have 5+ years of experience building scalable systems. Over the past year I worked at
+          Adapta, one of Latin America's largest AI companies, where I grew from Senior Software
+          Engineer to Domain Lead. I led critical platform domains including scheduled tasks, skills
+          system, and context management, owning product decisions, architecture, and feature
+          prioritization.
+        </p>
+        <p>
+          Some of the challenges I solved in production: refactored core application logic to
+          operate asynchronously via scheduled tasks, solving critical timeout and server-to-server
+          authentication issues; implemented the payment gateway responsible for the platform's
+          subscription renewals; and worked continuously on LLM performance optimization and cost
+          reduction in live environments.
+        </p>
+        <p>
+          My main stack is Node.js, React, Next.js, and TypeScript, with experience in C#, Angular,
+          Supabase, Docker, and AWS. I believe the edge of an engineer today isn't knowing AI tools.
+          It's knowing where they break, and how to build systems that hold up anyway.
+        </p>
+        <p>
+          If you're looking for someone who can ship reliable AI-powered features and full-stack
+          applications, feel free to{" "}
+          <Link to="/contact" className="text-blue-500 hover:underline">reach out</Link>.
         </p>
       </div>
 
@@ -78,7 +93,7 @@ const About = () => {
                     backgroundColor: 'black',
                     borderRadius: '4px',
                     fontSize: '12px',
-                    transition: 'all 0.3s ease' // Smooth transition for appearance
+                    transition: 'all 0.3s ease'
                   }
 
                 }>
@@ -95,15 +110,19 @@ const About = () => {
         <h3 className='subhead-text'>Work Experience.</h3>
         <div className='mt-5 flex flex-col gap-3 text-slate-500'>
           <p style={{ textAlign: 'justify' }}>
-          Throughout my career, I've had the opportunity to work on diverse and challenging projects. Currently, as a Full Stack Developer at Dhauz, I develop robust applications using modern technologies like C#, Angular, and Next.js, while also managing cloud infrastructure with AWS and Azure. Previously, as a Mobile Developer at LUMO, I focused on creating intuitive user interfaces and implementing key functionalities for the SisEnex platform, which enhanced the evaluation process for university events.
+            Throughout my career I've worked on production systems across AI platforms, enterprise
+            web applications, and mobile products. Most recently at Adapta, I led core platform
+            domains and shipped infrastructure that keeps LLM workloads reliable at scale. Before
+            that, I spent over three years at Dhauz growing from intern to tech lead, and started
+            my journey at LUMO building mobile interfaces for university event platforms.
           </p>
         </div>
 
         <div className='mt-12 flex'>
           <VerticalTimeline>
-            {experiences.map((experience, index) => (
+            {experiences.map((experience) => (
               <VerticalTimelineElement
-                key={experience.company_name}
+                key={`${experience.company_name}-${experience.title}-${experience.date}`}
                 date={experience.date}
                 iconStyle={{ background: experience.iconBg }}
                 icon={
@@ -150,10 +169,10 @@ const About = () => {
           </VerticalTimeline>
         </div>
 
-        
+
       </div>
 
-      
+
 
       <hr className='border-slate-200' />
 
