@@ -65,6 +65,13 @@ import rag9 from './rag9.png'
 
 import dhauz_logo from './dhauz_logo.jpg'
 import adapta_logo from './adapta-logo.png'
+import presentedigital1 from './presentedigital1.png'
+import presentedigital2 from './presentedigital2.png'
+import presentedigital3 from './presentedigital3.png'
+import presentedigital4 from './presentedigital4.png'
+import presentedigital5 from './presentedigital5.png'
+import presentedigital6 from './presentedigital6.png'
+import presentedigital7 from './presentedigital7.png'
 export {
     hero,
     meta,
@@ -100,6 +107,13 @@ export {
     amazon3,
     dhauz_logo,
     adapta_logo,
+    presentedigital1,
+    presentedigital2,
+    presentedigital3,
+    presentedigital4,
+    presentedigital5,
+    presentedigital6,
+    presentedigital7,
     cognisense1,
     cognisense2,
     cognisense3,

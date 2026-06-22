@@ -8,6 +8,13 @@ import { meta,
     tesla, 
     image, 
     logo,
+    presentedigital1,
+    presentedigital2,
+    presentedigital3,
+    presentedigital4,
+    presentedigital5,
+    presentedigital6,
+    presentedigital7,
     imagegit1,
     imagegit2,
     snake1,
@@ -328,6 +335,14 @@ export const socialLinks = [
 ];
 
 export const projects = [
+    {
+        iconUrl: threads,
+        img: [presentedigital1, presentedigital2, presentedigital3, presentedigital4, presentedigital5, presentedigital6, presentedigital7],
+        theme: 'btn-back-orange',
+        name: 'Presente Digital',
+        description: 'Built a full-stack SaaS platform that allows users to create personalized digital gifts — with photos, videos, custom messages, and animated visual effects — and share them via link or physical QR Code card. The platform handles authentication, subscription plans, and payment processing, and serves over 100 active paying users in production. Features include a multi-step gift builder, 15+ themed templates, animations (hearts, confetti, stars), PDF generation with QR Code, and a freemium pricing model with three tiers.',
+        link: 'https://virtual-gift.app/',
+    },
     {
         iconUrl: pricewise,
         img: [cognisense1,cognisense2,cognisense3,cognisense4],
