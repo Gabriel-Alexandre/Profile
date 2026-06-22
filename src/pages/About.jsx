@@ -56,8 +56,7 @@ const About = () => {
         </p>
         <p>
           If you're looking for someone who can ship reliable AI-powered features and full-stack
-          applications, feel free to{" "}
-          <Link to="/contact" className="text-blue-500 hover:underline">reach out</Link>.
+          applications, feel free to reach out.
         </p>
       </div>
 
