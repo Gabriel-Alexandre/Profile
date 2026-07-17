@@ -337,7 +337,7 @@ export const socialLinks = [
     {
         name: 'LinkedIn',
         iconUrl: linkedin,
-        link: 'https://www.linkedin.com/in/gabriel-carvalho-279816201/',
+        link: 'https://www.linkedin.com/in/gabrielcarvalho-ia/',
     }
 ];
 
